@@ -20,58 +20,363 @@
 
 </head>
 <body>
-<div data-role="page" data-control-title="Home" id="page1">
-    <div data-theme="a" data-role="header">
-        <h2 class="ui-title">
-            Welcome to iMovie App
-        </h2>
-        <div class="ui-field-contain" data-controltype="selectmenu">
-            <select id="selectmenu1" name="" data-theme="b">
-                <option value="option1">
+<div data-role="page" data-control-title="Home" data-theme="b" id="hOMEpAGE"
+style="background: url('http://www.indusladies.com/forums/attachments/movies/212436d1410799452t-all-abt-vikram-i-movie-4.jpg') repeat">
+    <div role="main" class="ui-content" style="padding: 10px">
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#hOMEpAGE" data-transition="fade" data-theme="" data-icon="home">
                     Home
-                </option>
-                <option value="value">
-                    About
-                </option>
-                <option value="value">
-                    Actors
-                </option>
-                <option value="value">
-                    Director
-                </option>
-            </select>
-        </div>
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                    Videos
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                    Gallery
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-transition="fade" data-theme="" data-icon="">
+                    Theatre
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="videos" id="page2">
+    <div data-theme="a" data-role="header">
+        <h1 class="ui-title">
+            videos
+        </h1>
+        <a href="#hOMEpAGE" class="ui-btn ui-btn-left">
+            Home
+        </a>
     </div>
     <div role="main" class="ui-content">
-        <div data-role="navbar" data-iconpos="bottom">
-            <ul>
-                <li>
-                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
-                        VIDEOS
-                    </a>
-                </li>
-                <li>
-                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
-                        GALLERY
-                    </a>
-                </li>
-                <li>
-                    <a href="#page1" data-transition="slideup" data-theme="g" data-icon="">
-                        THEATRES
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <iframe data-controltype="youtube" id="youtube1" type="text/html" width="100%"
-        height="200px" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0">
-        </iframe>
-        <div class="ui-field-contain" data-controltype="camerainput">
-            <input type="file" name="" id="camerainput1" accept="image/*" capture="camera">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+                <iframe data-controltype="youtube" id="youtube3" type="text/html" width="288px"
+                height="216px" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0">
+                </iframe>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+                <iframe data-controltype="youtube" id="youtube4" type="text/html" width="288px"
+                height="216px" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0">
+                </iframe>
+            </div>
         </div>
     </div>
-    <div data-theme="f" data-role="footer" data-position="fixed">
-        <h3 class="ui-title">
-            www.morbits.net
+</div>
+<div data-role="page" data-control-title="Gallery" id="page3">
+    <div data-theme="a" data-role="header">
+        <h1 class="ui-title">
+            GALLERY
+        </h1>
+        <a href="#hOMEpAGE" class="ui-btn ui-btn-left">
+            Home
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="htmlblock">
+            <iframe src="https://www.flickr.com/photos/news_tamil_movies_stills/6052399780/in/photolist-9dmtrL-9a7DFH-bX7wtV-9a7Dsr-9dimGD-adMiKX-adMiJ2-adQ8Am-cetUCu-b4K7RZ-9aaLm7-9aaLtW-9aaMUS-6E77qS-6E2WWg-6E78HG-6E78Us-6E77Bq-6E77SS-adMgWF-okvzLG-qpZRyp-6E77yN-adQ8DG-6E78NY-6E2Xbv-6E2Xd4-6E78EJ-6E77V1-adMiMD-aUHJmH-6E77Qw-adQ8to-aWc5Er-6E77Dm-adMiFK-adQ8wb-adMiHH-adQ8KJ-adQ8Kj-adMiSP-adMiKc-adQ8L3-adQ8FN-adQ8Fm-adQ8J1-adMiNk-adMiCB-adMizz-adQ8sU/player/"
+            width="448" height="299" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
+            mozallowfullscreen="" oallowfullscreen="" msallowfullscreen="">
+            </iframe>
+        </div>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#hOMEpAGE" data-transition="fade" data-theme="" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                    Videos
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                    Gallery
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-transition="fade" data-theme="" data-icon="">
+                    Theatre
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <span class="ui-title">
+        </span>
+    </div>
+</div>
+<div data-role="page" data-control-title="theatre" id="page4">
+    <div data-theme="a" data-role="header">
+        <h1 class="ui-title">
+            Theatre List
+        </h1>
+        <a href="#hOMEpAGE" class="ui-btn ui-btn-left">
+            Home
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <table class="wikitable sortable jquery-tablesorter" border="1">
+                <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Regal_Entertainment_Group" title="Regal Entertainment Group"
+                            data-mce-href="http://en.wikipedia.org/wiki/Regal_Entertainment_Group">
+                                Regal Entertainment Group
+                            </a>
+                        </td>
+                        <td>
+                            Knoxville,TN
+                        </td>
+                        <td>
+                            7,318
+                        </td>
+                        <td>
+                            574
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/AMC_Entertainment_Inc" title="AMC Entertainment Inc"
+                            class="mw-redirect" data-mce-href="http://en.wikipedia.org/wiki/AMC_Entertainment_Inc">
+                                AMC Entertainment Inc
+                            </a>
+                        </td>
+                        <td>
+                            Kansas City, MO
+                        </td>
+                        <td>
+                            4,988
+                        </td>
+                        <td>
+                            344
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Cinemark_Theatres" title="Cinemark Theatres"
+                            data-mce-href="http://en.wikipedia.org/wiki/Cinemark_Theatres">
+                                Cinemark Theatres
+                            </a>
+                        </td>
+                        <td>
+                            Plano, TX
+                        </td>
+                        <td>
+                            4,434
+                        </td>
+                        <td>
+                            332
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Carmike_Cinemas,_Inc." title="Carmike Cinemas, Inc."
+                            class="mw-redirect" data-mce-href="http://en.wikipedia.org/wiki/Carmike_Cinemas,_Inc.">
+                                Carmike Cinemas, Inc.
+                            </a>
+                        </td>
+                        <td>
+                            Columbus, GA
+                        </td>
+                        <td>
+                            2,904
+                        </td>
+                        <td>
+                            276
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Cineplex_Entertainment" title="Cineplex Entertainment"
+                            data-mce-href="http://en.wikipedia.org/wiki/Cineplex_Entertainment">
+                                Cineplex Entertainment
+                            </a>
+                        </td>
+                        <td>
+                            Toronto, ON
+                        </td>
+                        <td>
+                            1,672
+                        </td>
+                        <td>
+                            136
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Marcus_Theatres" title="Marcus Theatres"
+                            class="mw-redirect" data-mce-href="http://en.wikipedia.org/wiki/Marcus_Theatres">
+                                Marcus Theatres
+                            </a>
+                        </td>
+                        <td>
+                            Milwaukee, WI
+                        </td>
+                        <td>
+                            687
+                        </td>
+                        <td>
+                            55
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            7
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Harkins_Theatres" title="Harkins Theatres"
+                            data-mce-href="http://en.wikipedia.org/wiki/Harkins_Theatres">
+                                Harkins Theatres
+                            </a>
+                        </td>
+                        <td>
+                            Phoenix, AZ
+                        </td>
+                        <td>
+                            440
+                        </td>
+                        <td>
+                            31
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/National_Amusements" title="National Amusements"
+                            data-mce-href="http://en.wikipedia.org/wiki/National_Amusements">
+                                National Amusements
+                            </a>
+                        </td>
+                        <td>
+                            Dedham, MA
+                        </td>
+                        <td>
+                            423
+                        </td>
+                        <td>
+                            32
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/B%26B_Theatres" title="B&amp;B Theatres"
+                            data-mce-href="http://en.wikipedia.org/wiki/B%26B_Theatres">
+                                B&amp;B Theatres
+                            </a>
+                        </td>
+                        <td>
+                            Liberty, MO
+                        </td>
+                        <td>
+                            408
+                        </td>
+                        <td>
+                            50
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10
+                        </td>
+                        <td>
+                            <a href="http://en.wikipedia.org/wiki/Bow_Tie_Cinemas" title="Bow Tie Cinemas"
+                            data-mce-href="http://en.wikipedia.org/wiki/Bow_Tie_Cinemas">
+                                Bow Tie Cinemas
+                            </a>
+                        </td>
+                        <td>
+                            Ridgefield, CT
+                        </td>
+                        <td>
+                            388
+                        </td>
+                        <td>
+                            63
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <br mce_bogus="1">
+            </p>
+        </div>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#hOMEpAGE" data-transition="fade" data-theme="" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                    Videos
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                    Gallery
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-transition="fade" data-theme="" data-icon="">
+                    Theatre
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Footer
         </h3>
     </div>
 </div>
