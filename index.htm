@@ -1,0 +1,99 @@
+<html>
+<head>
+
+<title>I Movie App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/imovie.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/lightGallery.css" />    
+<script src="js/lightGallery.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#lightGallery").lightGallery(); 
+  });
+  
+  $(window).on('load resize', function(){  
+//alert("ol")
+//var width = $(window).width(), height = $(window).height()-134;
+//$(".body-content").css('max-height',height)
+ })
+ 
+ $(document).on("pagebeforecreate","#imovieapp",function(event){
+  var width = $(window).width(), height = $(window).height()-134;
+$(".body-content").css('max-height',height)
+});
+</script>
+</head>
+
+<body id="imovieapp">
+	
+	<div class="header">
+		<span class="header-title">Home</span>
+		<a href="#leftpanel3"><img src="images/menu.png" class="header-menu"></a>
+	</div>
+	
+	<div class="footer-page">
+	
+	
+	<div data-role="navbar" class="ui-block-b ui-navbar" role="navigation">
+				<ul class="ui-grid-b">
+					
+					<li class="accountBtn ui-block-a">
+						<a href="index.htm" data-icon="" data-theme="b" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-inline="true" class="ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-b ui-icon-home">
+							<span class="ui-btn-inner">
+								<span class="ui-btn-text">Home</span>
+								<span class="ui-icon ui-icon-account ui-icon-shadow">&nbsp;</span>
+							</span>
+						</a>
+					</li>
+					
+					<li class="helpBtn ui-block-b">
+						<a href="videos.htm" data-icon="" data-theme="b" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-icon-video">
+							<span class="ui-btn-inner">
+								<span class="ui-btn-text">Videos</span>
+								<span class="ui-icon ui-icon-info ui-icon-shadow">&nbsp;</span>
+							</span>
+						</a>
+					</li>
+					
+					<li class="cartBtn ui-block-c emptyCart">
+						<a href="images.htm" data-icon="" data-theme="b" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-icon-camera">
+							<span class="ui-btn-inner">
+								<span class="ui-btn-text">Images</span>
+								<span class="ui-icon ui-icon-cart ui-icon-shadow"></span>
+							</span>
+						</a>
+					</li>
+					
+					<li class="helpBtn ui-block-b">
+						<a href="theatre.htm" data-icon="" data-theme="b" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-icon-eye">
+							<span class="ui-btn-inner">
+								<span class="ui-btn-text">Theatres</span>
+								<span class="ui-icon ui-icon-info ui-icon-shadow">&nbsp;</span>
+							</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+	
+	</div>
+	
+	
+	
+	<div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner">
+        		<div class="leftMenu">About</div>
+        		<div class="leftMenu">Actors</div>
+        		<div class="leftMenu">Director</div>
+        		<div class="leftMenu">Plot</div>
+        		<div class="leftMenu">Reviews</div>
+        		<div class="leftMenu">Songs</div>
+        		<div class="leftMenu">Making</div>
+        </div>
+        
+    </div>
+</body>
